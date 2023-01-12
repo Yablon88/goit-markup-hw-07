@@ -97,7 +97,7 @@ a {
   color: var(--dark-color);
 }
 
-                                                                                      /* шапка з контактами */
+                                                                                      /* Mobil */
   
   @media screen and (min-width: 428px), screen and (max-width: 767px) {
     .logo {
@@ -123,6 +123,8 @@ a {
    
     }
     .mobile-menu.is-open .container{
+      display: flex;
+  flex-direction: column;
  padding: 80px 25px 40px;
  
  
@@ -149,10 +151,12 @@ padding-top: 24px;
 }
 
 
+
 .mobile-menu{
-  position: fixed;
-  width: 100%;
-  height: 100%;
+
+    position: fixed;
+  width: 100vw;
+  height: 100vh;
   top:0;
   left: 0;
   z-index: 1000;
@@ -163,6 +167,12 @@ visibility: hidden;
 pointer-events: none;
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+
+}
+.mobile-menu-contacts-group{
+margin-top: auto;
 }
 .mobile-menu.is-open{
 opacity: 1;
@@ -194,7 +204,7 @@ fill: currentColor;
 
 
 .mobile-menu-links{
-  margin-bottom: 284px;
+  /* margin-bottom: 284px; */
 }
 
 .mobile-menu-links{
@@ -223,6 +233,7 @@ color: var(--dark-color);
   display: flex;
   flex-direction: column-reverse;
   gap: 40px;
+  
   margin-bottom: 48px;
 }
 .contact-tel{
@@ -253,8 +264,7 @@ color: var(--primary-Text-color);
 
 .workers-icons {
   display: flex;
-  justify-content: center;
-  gap: 56px;
+  justify-content: space-between;
 }
 
 .workers-social-networks {
@@ -283,7 +293,7 @@ color: var(--primary-Text-color);
 
   letter-spacing: 0.02em;
   text-align: center;
-  padding: 192px 0;
+  padding: 112px 0;
 }
 
 .hero-title {
@@ -620,7 +630,7 @@ outline: none;}
   padding-bottom: 96px;
 }
 .futures-list {
-    padding-bottom: 72px;
+  margin-bottom: ; 72px;
 }
 .futures-list.icon-astronaut{
   padding-bottom: 0;
@@ -664,8 +674,11 @@ font-size: 36px;
   width: 264px;
    margin: 0 auto;
   background-color: var(--primary-white-color);
+     margin-bottom: 72px;
  }
-
+.partner:last-child{
+  margin-bottom: 0;
+}
 
 .team {
   background-color: var(--Light-color);
@@ -675,7 +688,7 @@ font-size: 36px;
 
 .worker-info {
   
-   margin-bottom: 72px;
+
   text-align: center;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -691,6 +704,7 @@ font-size: 36px;
 }
 
 .worker-card .workers-icons{
+  justify-content: center;
   gap: 24px;
 }
 .worker-card .primary-text{
@@ -1054,8 +1068,8 @@ width: 100%;
 }    
 
 .hero{
-   max-width: 1440px;}
-
+   max-width: 1440px;
+  padding: 192px 0;}
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
