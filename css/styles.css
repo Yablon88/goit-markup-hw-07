@@ -639,13 +639,16 @@ outline: none;}
 .futures-list {
   margin-bottom: 72px;
 }
+.futures-list:last-child{
+  margin-bottom: 0;
+}
 .futures-list.icon-astronaut{
   padding-bottom: 0;
 }
 .section-subtitles {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.11;
   margin-bottom: 8px;
 }
 .futures-list .primary-text{
@@ -985,6 +988,7 @@ width: 100%;
 
 .futures-list{
   width: 356px;
+  margin-bottom: 0;
   padding-bottom: 0;
   }
 
@@ -1104,9 +1108,10 @@ width: 100%;
 }
 .futures-list{
   width: 264px;
-}
+ }
 .futures-list .section-subtitles {
 font-size: 16px;
+line-height: 1.2;
 }
 .futures-list::before {
   display: block;
